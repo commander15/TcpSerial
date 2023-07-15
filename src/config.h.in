@@ -1,0 +1,12 @@
+#ifndef CONFIG_H
+#define CONFIG_H
+
+#include <QtCore/qglobal.h>
+
+#define TCP_SERIAL_VERSION_MAJOR @TcpSerial_VERSION_MAJOR@
+#define TCP_SERIAL_VERSION_MINOR @TcpSerial_VERSION_MINOR@
+#define TCP_SERIAL_VERSION_PATCH @TcpSerial_VERSION_PATCH@
+#define TCP_SERIAL_VERSION_STR   "@TcpSerial_VERSION@"
+#define TCP_SERIAL_VERSION       QT_VERSION_CHECK(@TcpSerial_VERSION_MAJOR@, @TcpSerial_VERSION_MINOR@, @TcpSerial_VERSION_PATCH@)
+
+#endif // CONFIG_H
