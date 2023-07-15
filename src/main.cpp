@@ -20,12 +20,12 @@ int main(int argc, char *argv[])
     app.setApplicationName("Tcp Serial");
     app.setApplicationVersion(TCP_SERIAL_VERSION_STR);
 
-    QCommandLineOption helpOption("help", "Show this help");
-    QCommandLineOption versionOption("version", "Show version");
-    QCommandLineOption hostOption({"h", "host"}, "Set host address to <host>", "host", "localhost");
-    QCommandLineOption portOption({"p", "port"}, "Set host port to <port>", "port");
-    QCommandLineOption serialOption({"s", "serial"}, "Set serial port to use to <serial>", "serial");
-    QCommandLineOption autoReconnectOption({"a", "auto-reconnect"}, "Enable automatic reconnection");
+    QCommandLineOption helpOption("help", "Show this help.");
+    QCommandLineOption versionOption("version", "Show version.");
+    QCommandLineOption hostOption({"h", "host"}, "Address to use for TCP connection.", "address", "localhost");
+    QCommandLineOption portOption({"p", "port"}, "Port to use for TCP Connection.", "port");
+    QCommandLineOption serialOption({"s", "serial"}, "Serial port to use.", "port");
+    QCommandLineOption autoReconnectOption({"a", "auto-reconnect"}, "Enable automatic reconnection.");
 
     QCommandLineParser parser;
     parser.setApplicationDescription("TcpSerial");
